@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/Estilos/Imagenes/Fondo\ De\ la\ pagina.png);
+    background-size: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(27, 27, 27, 0.979);
+}
+
+header,
+main,
+footer {
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+
+
+/* header */
+
+
+
+header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 5px #000;
+    background-color: rgba(0, 0, 0, 0.747);
+    font-size: 15px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+}
+
+.barra ul {
+    list-style: none;
+    padding: 0;
+}
+
+.barra ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.barra a{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+
+/* main */
+
+main {
+    min-height: calc(100vh - 100px); /* Altura mínima del contenido (100px para header y footer) */
+    display: grid;
+    grid-template-rows: auto 1fr; /* Título y contenido */
+}
+
+
+
+.titulo {
+    margin-top: 20px;
+    text-shadow: 0 0 12px #000 ;
+    letter-spacing: 2px;
+    color: yellow;
+}
+
+.parrafo {
+    margin-bottom: 20px;
+    color: yellow;
+    text-shadow: 0 0 5px #000;
+    background-color: rgba(41, 40, 40, 0.164);
+}
+
+.video1 {
+    margin-bottom: 20px;
+    height: 80%;
+    width: 80%;
+}
+
+
+
+/* Footer */
+
+
+
+footer{
+    background-color: rgba(0, 0, 0, 0.623);
+    text-align: center;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.textoFooter {
+    margin-bottom: 20px;
+    color: yellow;
+    text-align: center;
+    font-size: 20px;
+}
+
+.redes a {
+    margin-right: 10px;
+    color: yellow;
+    letter-spacing: normal;
+    font-size: 30px;
+}
+
+.subir {
+    width: 30px;
+    height: 30px;
+    color: yellow;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 30px;
+}
+
+/* inicio media query */
+
+@media only screen and (min-width: 480px) {
+    header {
+        max-width: 1200px; 
+        margin: 0 auto; 
+        padding: 10px; 
+        position: relative;  
+        height: 50px;
+    }
+
+    .barra {
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%);
+        right: 1px; 
+    }
+
+
+    .logo {
+        position: absolute; 
+        top: 50%; 
+        transform: translateY(-50%);
+        left: 10px;
+    }
+}
+
+
+    @media only screen and (min-width: 720px) {
+        header {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr auto; /* Columnas para el logo y la barra */
+            align-items: center;
+            height: 50px;
+        }
+    
+        .barra {
+            justify-self: end; /* Alinear la barra a la derecha */
+        }
+    
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+        .titulo {
+            margin-top: 10px; /* Ajustar el margen superior del título */
+            text-align: center; /* Centrar el texto */
+            color: yellow;
+        }
+    
+        .contenido {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 10px;
+            width: 80%; /* Ajusta según sea necesario */
+        }
+    
+        .video-container {
+            width: 50%;
+        }
+    
+        .video1 {
+            width: 100%;
+            height: auto;
+        }
+    
+        .parrafo-container {
+            width: 50%;
+        }
+    
+        .parrafo {
+            background-color: rgba(41, 40, 40, 0.164);
+            color: yellow;
+            text-shadow: 0 0 5px #000;
+            padding: 10px;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        
+        header{
+            height: 80px;
+            width: auto;
+            font-size: 18px;
+            align-content: space-between;
+        }
+        
+        .logo{
+        float: inline-start;
+        }
+        
+        .barra{
+            float: right;
+            padding: 10px;
+        }
+              
+        
+        /* inicio main */
+        
+        
+        
+         main{
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .titulo{
+            color: yellow;
+            width: 100%;
+            letter-spacing: 2px;
+            margin-top: 20px;
+        }
+        
+        .parrafo{
+            margin: 20px;
+            width: 25%;
+            float: right;
+            padding-right: 10px;
+        }
+        
+        .video1{
+            padding: 20px;
+            height:500px;
+            width: 500px;
+        } 
+        
+        
+        
+        /* inicio footer */
+        
+        
+        
+        footer{
+            height: 100px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .Imgfondo{
+            padding: 5px;
+        }
+        
+        .textoFooter{
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        footer .redes a{
+            letter-spacing: normal;
+            font-size: 30px;
+            padding: 5px;
+        
+        }
+    
+    }
