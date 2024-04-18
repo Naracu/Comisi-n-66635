@@ -8,8 +8,8 @@ body {
     background-attachment: fixed;
     background-color: rgba(27, 27, 27, 0.979);
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
 }
 
 h1, h2, h3, h4 {
