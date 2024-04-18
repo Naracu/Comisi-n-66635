@@ -11,27 +11,38 @@
 <body>
     <header>
         
-        <div> 
-            <img class="logo" src="../Estilos/Imagenes/HelldiversTitulo.webp" alt="" width="120px" height="auto">
-            <nav class="barra">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Unete</a></li>
-                    <li><a href="Compañia.html">Compañia</a></li>
-                    <li><a href="Blog.html">Blog</a></li>
-                    <li><a href="Contactanos.html">Contactanos</a></li>
-                </ul>
-            </nav>
+        <div class="contenedor">
+            <div> 
+                <img class="logo" src="../Estilos/Imagenes/HelldiversTitulo.webp" alt="" width="120px" height="auto">
+            </div>
+            <div>
+                <nav class="barra">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="#">Unete</a></li>
+                        <li><a href="./Compañia.html">Compañia</a></li>
+                        <li><a href="./Enemigos.html">Enemigos</a></li>
+                     <li><a href="./Contactanos.html">Contactanos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>            
    
     </header>
    
     <main>
-        <form action="enviar.php" method="post" enctype="text/plain">
-            <label for="">Aca iria el formulario</label>
-            <input type="text">
-        </form>
-        <img src="../Estilos/Imagenes/Imagen1Unete.webp" alt="">
+        <Div class="titulo">
+            <h1>Unete</h1>
+        </Div>
+        <div>
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <label for="">Aca iria el formulario</label>
+                <input type="text">
+            </form>
+        </div>
+        <div class="imgunete">
+            <img src="../Estilos/Imagenes/Imagen1Unete.webp" alt="" width="120px" height="auto">
+        </div>
     </main>
    
     <footer>
@@ -47,6 +58,8 @@
         </div>
     
     </footer>
+    
+    <a href="#" class="subir"><i class="fa-solid fa-circle-up"></i></a>
 
 </body>
 </html>
