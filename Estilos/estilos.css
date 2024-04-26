@@ -8,10 +8,14 @@ body {
     background-attachment: fixed;
     background-color: rgba(27, 27, 27, 0.979);
 }
-h1, h2, h3, h4, descripciones{
+h1, h2, h3, h4 {
 text-shadow: 0 0 20px #000 ;
 color: yellow;
 background-color: rgba(0, 0, 0, 0.623);
+width: 100%;
+height: auto;
+text-align: center;
+display: block;
 }
 /* header */
 header{
@@ -19,7 +23,8 @@ header{
     text-shadow: 0 0 5px #000;
     background-color: rgba(0, 0, 0, 0.747);
     font-size: 15px;
-    display: flex;
+    text-align: center;
+    align-content: center;
 }
 
 .logo {
@@ -29,8 +34,9 @@ header{
 }
 
 .contenedorarmas{
-    display: flex;
-    align-content: center;
+    display: block;
+    align-content:initial;
+
 }
 
 .barra ul {
@@ -53,7 +59,30 @@ header{
 /* main */
 
 main {
-    display: flex;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+
+.imgarma{
+    width: 320px;
+    height: auto;
+}
+
+.imgenemigos{
+    width: 320px;
+    height: auto;
+}
+
+.contenidoenemigos {
+    width: 100%;
+    height: auto;
+}
+
+.imgcontactanos{
+    
+    width: 320px;
+    height: auto;
 }
 
 .Imgunete {
@@ -61,7 +90,7 @@ main {
 }
 
 .titulo {
-    margin-top: 20px;
+    margin-top: 0;
     text-shadow: 0 0 12px #000 ;
     letter-spacing: 2px;
     color: yellow;
@@ -76,8 +105,8 @@ main {
 
 .video1 {
     margin-bottom: 20px;
-    height: 80%;
-    width: 80%;
+    height: 85%;
+    width: 85%;
 }
 
 
@@ -121,3 +150,25 @@ footer{
 }
 
 /* inicio media query */
+
+
+@media only screen and (min-width: 480px) {
+
+    .imgarma{
+        width: 480px;
+        height: auto;
+    }
+
+    .imgcontactanos{
+        width: 480px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+ 
+}
+
+@media only screen and (min-width: 1000px) {
+
+ }
