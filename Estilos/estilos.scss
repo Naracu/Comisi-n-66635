@@ -1,35 +1,31 @@
-h1, h2, h3, h4, h5, p{
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.2039215686);
+h1, h2, h3, h4, h5, p, label{
+    text-shadow: 0 0 20px rgb(0, 0, 0);
     color: yellow;
-    background-color: rgba(0, 0, 0, 0.514);
     width: 100%;
     height: auto;
     text-align: center;
     display: block;
+    padding: 5px;
   }
   
   /* header */
   header {
     background-color: rgb(5, 5, 5);
   }
+  .navbar-toggler  {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='yellow' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='yellow' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
   .nav-link {
-    text-decoration: none;
-    color: yellow;
-    align-content: right;
+    color: yellow !important;
+    transition: color .15s ease-in-out, 
+    background-color .15s ease-in-out, border-color .15s ease-in-out;
+
   }
-  .nav-item {
-    justify-content: right;
-  }
-  .navbar-toggler {
-    color: yellow;
-  }
-  .navbar{
-    color: yellow;
-  }
-  .navbar-expand-sm {
-    align-content: end;
-    color: yellow;
-  }
+
   /* main */
   main {
     display: inline-block;
@@ -43,6 +39,7 @@ h1, h2, h3, h4, h5, p{
     background-color: rgba(0, 0, 0, 0.979);
     margin: 0;
     padding: 0;
+    width: 100%;
   }
   
   /* comienza compañia */
@@ -69,10 +66,6 @@ h1, h2, h3, h4, h5, p{
 .col {
     padding: 5px;
 }
-.form-control{
-
-}
-
   /* fin unete*/
   .imgcontactanos {
     width: 320px;
@@ -87,12 +80,6 @@ h1, h2, h3, h4, h5, p{
     text-align: center;
   }
   
-  .parrafo {
-    color: yellow;
-    text-shadow: 0 0 5px #000;
-    background-color: rgba(41, 40, 40, 0.164);
-  }
-  
   .video1 {
     margin-bottom: 20px;
     height: 85%;
@@ -101,7 +88,7 @@ h1, h2, h3, h4, h5, p{
   
   /* Footer */
   footer {
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: rgb(0, 0, 0);
     text-align: center;
     position: static;
     bottom: 0;
