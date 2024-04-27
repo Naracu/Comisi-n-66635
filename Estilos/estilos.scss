@@ -1,15 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(Imagenes/Fondo\ De\ la\ pagina.png);
-    background-size: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.979);
-  }
-  
-  h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, p{
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.2039215686);
     color: yellow;
     background-color: rgba(0, 0, 0, 0.514);
@@ -21,52 +10,73 @@ body {
   
   /* header */
   header {
-    background-color: rgba(5, 5, 5, 0.726);
+    background-color: rgb(5, 5, 5);
   }
-  
   .nav-link {
     text-decoration: none;
     color: yellow;
-    justify-content: right;
+    align-content: right;
   }
-  
   .nav-item {
     justify-content: right;
   }
-  
+  .navbar-toggler {
+    color: yellow;
+  }
+  .navbar{
+    color: yellow;
+  }
+  .navbar-expand-sm {
+    align-content: end;
+    color: yellow;
+  }
   /* main */
   main {
     display: inline-block;
     text-align: center;
     align-content: center;
+    background-image: url(Imagenes/Fondo\ De\ la\ pagina.png);
+    background-size: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.979);
+    margin: 0;
+    padding: 0;
   }
   
   /* comienza compañia */
   .contenedorarmas {
-    display: block;
-    align-content: initial;
+    justify-content: center;
   }
-  
   .imgarma {
     width: 320px;
     height: auto;
   }
-  
   /* fin compañia */
+
   /* comienza enemigos */
   .imgenemigos {
     width: 320px;
     height: auto;
   }
-  
   /* fin enemigos */
+  
+  /* Comienza unete */
+  .Imgunete {
+    display: flex;
+  }
+.col {
+    padding: 5px;
+}
+.form-control{
+
+}
+
+  /* fin unete*/
   .imgcontactanos {
     width: 320px;
     height: auto;
-  }
-  
-  .Imgunete {
-    display: flex;
   }
   
   .titulo {
