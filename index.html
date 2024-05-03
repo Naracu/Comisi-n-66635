@@ -13,6 +13,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Estilos/estilos.css" />
+    <link rel="stylesheet" href="./Estilos/estilos.css">
     <title>Helldivers</title>
 </head>
 
@@ -54,7 +55,6 @@
     </header>
 
     <!-- comienzo main -->
-
     <main>
         <div class="titulo">
             <h1>UNETE Y LUCHA POR LA DEMOCRACIA</h1>
@@ -119,19 +119,19 @@
         </div>
         <!-- carrusel bs 5 fin -->
         <div class="contenidoinicio">
-            <div>
-                <p class="parrafo">
+            <div class="parrafo1">
+                <p>
                     ¡Atención, ciudadanos de la Democracia Tutelada! Ha llegado el momento de extender nuestros ideales de libertad y justicia más allá de los confines de nuestro sistema solar. En un universo donde la opresión y la tiranía amenazan a los indefensos, es nuestra responsabilidad llevar la antorcha de la democracia a cada rincón oscuro y olvidado.
                 </p>
             </div>
-            <div>
+            <div class="video1">
                 <iframe class="video1" src="https://www.youtube.com/embed/3DJCLVCirQE?si=OSRk37k3CFsXoqI4"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div>
-                <p class="parrafo">
+            <div class="parrafo2">
+                <p >
                     Nos enfrentamos a desafíos que van más allá de lo físico. Nuestra misión no es solo derrotar a los enemigos que se interponen en nuestro camino, sino también liberar las mentes y los corazones de aquellos que han sido sometidos al yugo de la opresión. ¿Estás listo para convertirte en un embajador de la libertad y la justicia en los confines del espacio?
                 </p>
             </div>
@@ -144,6 +144,7 @@
         <div>
             <p class="textoFooter">Todos los derechos reservados al autor</p>
         </div>
+        <div class="wow animate__flip">
         <div class="redes">
             <a href="https://www.facebook.com/groups/3570406083223412"><i class="fa-brands fa-square-facebook"></i></a>
             <a href="https://www.instagram.com/helldivers2game/"><i class="fa-brands fa-square-instagram"></i></a>
@@ -154,6 +155,7 @@
             <a href="https://store.steampowered.com/app/553850/HELLDIVERS_2/"><i
                     class="fa-brands fa-square-steam"></i></a>
         </div>
+    </div>
     </footer>
 
     <a href="#" class="subir"><i class="fa-solid fa-circle-up"></i></a>
@@ -162,6 +164,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 
 </html>
